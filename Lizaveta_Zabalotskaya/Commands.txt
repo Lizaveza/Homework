@@ -1,0 +1,28 @@
+git checkout master
+git checkout -b first_branch
+
+vim Task_2.txt (Adding changes)
+
+git add Task_2.txt
+git commit -m "Commit 1"
+
+git checkout master
+
+git checkout -b second_branch
+
+vim Task_2.txt (Adding other changes)
+
+git add Task_2.txt
+git commit -m "Commit 2"
+
+git checkout master
+git merge first_branch second_branch
+
+(Creating conflict)
+
+vim Task_2.txt (Choose changes)
+
+git add Task_2.txt
+git commit -m "Message"
+git push
+
